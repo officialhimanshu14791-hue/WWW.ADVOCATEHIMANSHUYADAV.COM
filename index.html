@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocate Himanshu Singh Yadav | Criminal & Family Law Expert Kanpur</title>
+    <!-- आइकॉन के लिए लिंक -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- साफ़ और सुंदर लिखावट के लिए गूगल फॉन्ट -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --navy-blue: #0B192C; /* गहरा नीला रंग */
+            --gold-color: #D4AF37; /* सुनहरा रंग */
+            --white: #FFFFFF;
+            --dark-gray: #333333;
+            --light-bg: #F1F6F9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        /* ऊपर का नेविगेशन बार */
+        header {
+            background-color: var(--navy-blue);
+            padding: 15px 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--gold-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .logo {
+            color: var(--white);
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: var(--gold-color);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold-color);
+        }
+
+        .btn-consult {
+            background-color: var(--gold-color);
+            color: var(--navy-blue);
+            padding: 10px 22px;
+            border-radius: 5px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-consult:hover {
+            background-color: var(--white);
+            color: var(--navy-blue);
+            transform: translateY(-2px);
+        }
+
+        /* मुख्य होम पेज (Hero Section) */
+        .hero {
+            background: linear-gradient(rgba(11, 25, 44, 0.92), rgba(30, 62, 98, 0.92)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1920') no-repeat center center/cover;
+            padding: 160px 5% 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--white);
+            min-height: 90vh;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 650px;
+        }
+
+        .hero-content h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .hero-content h1 span {
+            color: var(--gold-color);
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* आपकी फोटो का फ्रेम */
+        .profile-img-container {
+            width: 330px;
+            height: 420px;
+            border: 4px solid var(--gold-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+            background: #1e3e62;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .placeholder-text {
+            color: var(--gold-color);
+            text-align: center;
+            padding: 20px;
+            font-weight: 600;
+        }
+
+        /* केस के प्रकार (Expertise) */
+        .section-title {
+            text-align: center;
+            padding: 80px 0 30px;
+            font-size: 34px;
+            color: var(--navy-blue);
+            font-weight: 700;
+        }
+
+        .section-title span {
+            color: var(--gold-color);
+            display: block;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .expertise-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 0 5% 80px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+            border-top: 5px solid var(--navy-blue);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-top-color: var(--gold-color);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .card i {
+            font-size: 50px;
+            color: var(--gold-color);
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: var(--navy-blue);
+            font-size: 24px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 15px;
+        }
+
+        /* संपर्क और मैसेज फॉर्म का सेक्शन */
+        .contact-section {
+            background-color: var(--navy-blue);
+            color: var(--white);
+            padding: 80px 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .contact-info h2 {
+            color: var(--gold-color);
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        .info-item i {
+            color: var(--gold-color);
+            font-size: 22px;
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+
+        .info-item a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        .info-item a:hover {
+            color: var(--gold-color);
+        }
+
+        /* गूगल मैप का ढांचा */
+        .map-container {
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid var(--gold-color);
+        }
+
+        .contact-form {
+            flex: 1;
+            min-width: 350px;
+            background: rgba(255, 255, 255, 0.04);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--gold-color);
+            font-size: 15px;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border-radius: 6px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(0,0,0,0.3);
+            color: white;
+            font-size: 15px;
+        }
+
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold-color);
+        }
+
+        .form-group select option {
+            background-color: var(--navy-blue);
+            color: white;
+        }
+
+        .btn-submit {
+            background-color: var(--gold-color);
+            color: var(--navy-blue);
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--white);
+            color: var(--navy-blue);
+        }
+
+        /* नीचे का हिस्सा (Footer) */
+        footer {
+            background-color: #060e1a;
+            color: rgba(255,255,255,0.6);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+            border-top: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        /* मोबाइल के लिए सेटिंग */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+                padding: 15px;
+            }
+            nav {
+                margin: 5px 0;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 220px;
+                gap: 50px;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .profile-img-container {
+                width: 290px;
+                height: 370px;
+            }
+            .contact-section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ऊपर का मेनू बार -->
+    <header>
+        <div class="logo">Advocate <span>Himanshu Singh Yadav</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#expertise">Practice Areas</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <a href="#contact" class="btn-consult"><i class="fa-regular fa-calendar-check"></i> Appointment</a>
+    </header>
+
+    <!-- मुख्य बैनर (Hero Section) -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Advocate <br><span>Himanshu Singh Yadav</span></h1>
+            <p>कानपुर के अनुभवी वकील। हम कोर्ट के पारिवारिक विवाद (Family Case) और गंभीर आपराधिक मामलों (Criminal Case) में सही और पक्की कानूनी सलाह देते हैं।</p>
+            
+            <div class="hero-buttons">
+                <!-- सीधा व्हाट्सएप पर मैसेज भेजने का बटन -->
+                <a href="https://wa.me/917651862237?text=Hello%20Advocate%20Himanshu%20Ji,%20I%20need%20legal%20consultation." target="_blank" class="btn-consult" style="background-color: #25D366; color: white; padding: 14px 28px; font-size: 16px;">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i> WhatsApp
+                </a>
+                <!-- डायरेक्ट कॉल का बटन -->
+                <a href="tel:+917651862237" class="btn-consult" style="background-color: #007bb5; color: white; padding: 14px 28px; font-size: 16px;">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-img-container">
+                <!-- अपनी फोटो लगाने के लिए नीचे दी गई लाइन के आगे से कुंडी हटाएँ और 'my-photo.jpg' की जगह अपनी फोटो फाइल का नाम लिखें -->
+                <!-- <img src="my-photo.jpg" alt="Advocate Himanshu Singh Yadav"> -->
+                <div class="placeholder-text">
+                    <i class="fa-solid fa-user-tie" style="font-size: 60px; margin-bottom:15px; display:block;"></i>
+                    यहाँ अपनी सुंदर और <br>प्रोफेशनल फोटो लगाएं
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- केसेज के प्रकार (Practice Areas) -->
+    <section id="expertise" style="background-color: #ffffff; padding-bottom: 20px;">
+        <h2 class="section-title">हम इन मामलों के विशेषज्ञ हैं <span>Our Areas of Practice</span></h2>
+        <div class="expertise-container">
+            <!-- क्रिमिनल केस कार्ड -->
+            <div class="card">
+                <i class="fa-solid fa-gavel"></i>
+                <h3>Criminal Cases (क्रिमिनल मामले)</h3>
+                <p>जमानत (Bail) करवाना, कोर्ट ट्रायल, एफआईआर (FIR) से जुड़े मामले, सेशंस कोर्ट और हाई कोर्ट में अपील और सभी प्रकार के फौजदारी मामलों में मजबूत पैरवी।</p>
+            </div>
+            <!-- फैमिली केस कार्ड -->
+            <div class="card">
+                <i class="fa-solid fa-hands-holding-child"></i>
+                <h3>Family Cases (पारिवारिक मामले)</h3>
+                <p>तलाक (Divorce), भरण-पोषण (Maintenance), घरेलू हिंसा, बच्चों की कस्टडी और परिवार के आपसी विवादों का सही और कानूनी समाधान।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- संपर्क और फॉर्म का सेक्शन -->
+    <section class="contact-section" id="contact">
+        <div class="contact-info">
+            <h2>कार्यालय का पता और समय</h2>
+            <p style="margin-bottom: 35px; opacity: 0.85; font-size: 15px;">यदि आप किसी कानूनी परेशानी में हैं, तो नीचे दिए गए फॉर्म को भरकर या सीधे हमारे ऑफिस आकर मिल सकते हैं।</p>
+            
+            <div class="info-item">
+                <i class="fa-solid fa-building-shield"></i>
+                <div>
+                    <strong>ऑफिस का पता (Chamber Address):</strong><br>
+                    Chamber No.14, Ground Floor, DR. Rajendra Prasad Adhivakta Bhawan, Kanpur Nagar - 208001
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <strong>फ़ोन / व्हाट्सएप नंबर:</strong><br>
+                    <a href="tel:+917651862237">+91 7651862237</a>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <div>
+                    <strong>ईमेल आईडी (Official Email):</strong><br>
+                    <a href="mailto:officialhimanshu14791@gmail.com">officialhimanshu14791@gmail.com</a>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                    <strong>मिलने का समय (Meeting Time):</strong><br>
+                    10:00 AM To 05:00 PM (सोमवार से शनिवार)
+                </div>
+            </div>
+
+            <!-- कानपुर का गूगल मैप लिंक -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14289.473523775079!2d80.3283256!3d26.4438344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c47a11c05d761%3A0x6b1ed88147ed3a2c!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="230" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- मैसेज भेजने का आसान फॉर्म जो सीधे व्हाट्सएप पर खुलेगा -->
+        <div class="contact-form">
+            <h3 style="color: var(--gold-color); margin-bottom: 25px; font-size: 22px;">अपनी समस्या हमें भेजें</h3>
+            <form id="legalForm" onsubmit="sendToWhatsApp(event)">
+                <div class="form-group">
+                    <label for="clientName">आपका नाम</label>
+                    <input type="text" id="clientName" required placeholder="अपना नाम लिखें">
+                </div>
+                <div class="form-group">
+                    <label for="clientPhone">मोबाइल नंबर</label>
+                    <input type="tel" id="clientPhone" required placeholder="अपना चालू मोबाइल नंबर डालें">
+                </div>
+                <div class="form-group">
+                    <label for="caseCategory">केस का प्रकार चुनें</label>
+                    <select id="caseCategory" required>
+                        <option value="" disabled selected>-- यहाँ चुनें --</option>
+                        <option value="Criminal Case">Criminal Case (क्रिमिनल मामला)</option>
+                        <option value="Family Case">Family Case (पारिवारिक मामला)</option>
+                        <option value="Other Legal Advisory">Other (अन्य कानूनी सलाह)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="clientMessage">अपनी समस्या के बारे में लिखें</label>
+                    <textarea id="clientMessage" rows="4" required placeholder="यहाँ अपनी परेशानी के बारे में थोड़ा लिखें..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">
+                    <i class="fa-solid fa-paper-plane"></i> संदेश भेजें
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- नीचे का हिस्सा (Footer) -->
+    <footer>
+        <p>&copy; 2026 Advocate Himanshu Singh Yadav. All Rights Reserved.</p>
+        <p style="font-size: 12px; margin-top: 8px; opacity: 0.5; max-width: 800px; margin-left: auto; margin-right: auto;">
+            सूचना: बार काउंसिल ऑफ इंडिया के नियमों के अनुसार यह वेबसाइट किसी भी प्रकार का विज्ञापन नहीं है, बल्कि केवल आम जनता को जानकारी देने के लिए बनाई गई है।
+        </p>
+    </footer>
+
+    <!-- फॉर्म का डेटा व्हाट्सएप पर भेजने का कोड -->
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            
+            // आपका असली व्हाट्सएप नंबर यहाँ पूरी तरह सेट है
+            var myWhatsAppNumber = "917651862237"; 
+            
+            var name = document.getElementById('clientName').value;
+            var phone = document.getElementById('clientPhone').value;
+            var category = document.getElementById('caseCategory').value;
+            var message = document.getElementById('clientMessage').value;
+            
+            var textMessage = "⚖️ *नया केस संदेश - वेबसाइट*\n\n" +
+                              "👤 *नाम:* " + name + "\n" +
+                              "📞 *मोबाइल नंबर:* " + phone + "\n" +
+                              "📂 *केस का प्रकार:* " + category + "\n" +
+                              "📝 *समस्या:* " + message;
+            
+            var whatsappURL = "https://wa.me/" + myWhatsAppNumber + "?text=" + encodeURIComponent(textMessage);
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+</html>
