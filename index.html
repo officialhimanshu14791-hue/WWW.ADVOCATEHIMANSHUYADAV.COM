@@ -370,8 +370,8 @@
             <div class="info-item">
                 <i class="fa-solid fa-building-shield"></i>
                 <div>
-                    <strong>ऑफिस का पता (Chamber Address):</strong><br>
-                    Chamber No.14, Ground Floor, DR. Rajendra Prasad Adhivakta Bhawan, Kanpur Nagar - 208001
+                    <strong>ऑफिस का पता (Office Address):</strong><br>
+                   148 "M" Block, Kidwai Nagar, Kanpur - 208011
                 </div>
             </div>
             <div class="info-item">
@@ -398,7 +398,7 @@
 
             <div class="map-container">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14289.473523775079!2d80.3283256!3d26.4438344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c47a11c05d761%3A0x6b1ed88147ed3a2c!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14292.836262118318!2d80.3259972!3d26.4165609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c47012ea26871%3A0xfa5300b8c6e26466!2sKidwai%20Nagar%2C%20Kanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
                     width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy">
                 </iframe>
             </div>
@@ -428,9 +428,9 @@
                     <label for="clientMessage">अपनी समस्या के बारे में लिखें</label>
                     <textarea id="clientMessage" rows="4" required placeholder="यहाँ अपनी परेशानी के बारे में थोड़ा लिखें..."></textarea>
                 </div>
-                <button type="submit" class="btn-submit">
+                <div class="btn-submit">
                     <i class="fa-solid fa-paper-plane"></i> संदेश भेजें
-                </button>
+                </div>
             </form>
         </div>
     </section>
@@ -439,7 +439,7 @@
         <p>&copy; 2026 Advocate Himanshu Singh Yadav. All Rights Reserved.</p>
     </footer>
 
-    <script>
+    <script {safe}>
         function sendToWhatsApp(event) {
             event.preventDefault();
             var myWhatsAppNumber = "917651862237"; 
