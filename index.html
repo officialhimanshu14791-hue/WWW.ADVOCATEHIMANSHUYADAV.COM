@@ -276,6 +276,7 @@
             font-size: 15px;
         }
 
+        /* बटन को यहाँ सही (Fix) किया गया है */
         .btn-submit {
             background-color: var(--gold-color);
             color: var(--navy-blue);
@@ -291,6 +292,12 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--white);
+            color: var(--navy-blue);
+            transform: translateY(-2px);
         }
 
         footer {
@@ -371,7 +378,7 @@
                 <i class="fa-solid fa-building-shield"></i>
                 <div>
                     <strong>ऑफिस का पता (Office Address):</strong><br>
-                   148 "M" Block, Kidwai Nagar, Kanpur - 208011
+                    M Block, Kidwai Nagar, Kanpur - 208011
                 </div>
             </div>
             <div class="info-item">
@@ -428,9 +435,10 @@
                     <label for="clientMessage">अपनी समस्या के बारे में लिखें</label>
                     <textarea id="clientMessage" rows="4" required placeholder="यहाँ अपनी परेशानी के बारे में थोड़ा लिखें..."></textarea>
                 </div>
-                <div class="btn-submit">
+                <!-- यहाँ बटन बिल्कुल सही रूप में बदल दिया गया है -->
+                <button type="submit" class="btn-submit">
                     <i class="fa-solid fa-paper-plane"></i> संदेश भेजें
-                </div>
+                </button>
             </form>
         </div>
     </section>
